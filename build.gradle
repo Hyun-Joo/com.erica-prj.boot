@@ -29,12 +29,15 @@ test {
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-web')
 
-        compileOnly('org.projectlombok:lombok:1.18.16')
+        compile('org.projectlombok:lombok:1.18.16')
         annotationProcessor 'org.projectlombok:lombok:1.18.16'
 
         compile('org.springframework.boot:spring-boot-starter-data-jpa')
         compile('com.h2database:h2')
         //implementation group: 'org.hibernate', name: 'hibernate-core'
+
+        compile('org.springframework.boot:spring-boot-starter-mustache')
+        compile("org.springframework.boot:spring-boot-devtools")
 
         testCompile('org.springframework.boot:spring-boot-starter-test')
 //    testImplementation('org.springframework.boot:spring-boot-starter-test') {
